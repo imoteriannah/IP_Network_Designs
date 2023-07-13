@@ -1,0 +1,21 @@
+R1
+configure terminal
+Router rip
+version 2
+network 192.168.13.0 
+do wr
+
+
+R2
+configure terminal
+Router rip
+version 2
+network 192.168.13.0 
+do wr
+
+R3
+configure terminal
+Router rip
+version 2
+network 192.168.13.0 
+do wr

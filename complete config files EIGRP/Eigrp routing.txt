@@ -1,0 +1,23 @@
+R1
+configure terminal
+Router eigrp 20
+network 192.168.13.0 0.0.0.63 
+network 192.168.13.192 0.0.0.3 
+network 192.168.13.196 0.0.0.3
+do wr
+
+R2
+configure terminal
+Router eigrp 20
+network 192.168.13.64 0.0.0.63 
+network 192.168.13.192 0.0.0.3 
+network 192.168.13.200 0.0.0.3 
+do wr
+
+R3
+configure terminal
+Router eigrp 20
+network 192.168.13.128 0.0.0.63 
+network 192.168.13.200 0.0.0.3
+network 192.168.13.196 0.0.0.3
+do wr
